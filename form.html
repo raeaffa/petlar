@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo Geral */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 80px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #7F22A0;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #F9A03F;
+        }
+
+        /* Formulário */
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .confirmation-message {
+            color: #28a745;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="html.html" target="_blank">
+                <img src="logo2.png" alt="Logo Amigo Não se Compra">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="html.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Formulário de Adoção -->
+<div class="form-container">
+    <h2>Formulário de Adoção</h2>
+    <form id="adoptionForm" onsubmit="return handleSubmit(event)">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="petInterest">Nome do Pet que deseja adotar:</label>
+        <input type="text" id="petInterest" name="petInterest" required>
+
+        <label for="houseType">Tipo de residência:</label>
+        <select id="houseType" name="houseType" required>
+            <option value="">Selecione</option>
+            <option value="Apartamento">Apartamento</option>
+            <option value="Casa com quintal">Casa com quintal</option>
+            <option value="Casa sem quintal">Casa sem quintal</option>
+        </select>
+
+        <label for="experience">Você já possui experiência com animais de estimação?</label>
+        <select id="experience" name="experience" required>
+            <option value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+        <label for="message">Por que você deseja adotar um pet?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar Formulário</button>
+    </form>
+    <div id="confirmation" class="confirmation-message" style="display: none;">
+        Obrigado! Seu formulário foi enviado com sucesso.
+        Estamos analisando seus dados. 
+        Entraremos em contato assim que possivel. 🐶🐱
+    </div>
+</div>
+
+<script>
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        // Exibe mensagem de confirmação
+        document.getElementById('confirmation').style.display = 'block';
+
+        // Limpa o formulário
+        document.getElementById('adoptionForm').reset();
+
+        return false;
+    }
+</script>
+
+</body>
+</html>

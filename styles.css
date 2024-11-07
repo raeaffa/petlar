@@ -1,0 +1,143 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Header */
+header {
+    background-color: #7F22A0;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Estilo da Introdução */
+.support-intro h1 {
+    color: #4f2170;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Perguntas Frequentes (FAQ) */
+.faq {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.faq h2 {
+    color: #5E2B84;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-form h2 {
+    color: #5E2B84;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.cta-button {
+    background-color: #4f2170;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #6a35a1;
+}
+
+/* Seção de Suporte Adicional */
+.additional-support h2 {
+    color: #5E2B84;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #7F22A0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 25px;
+    height: 25px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}

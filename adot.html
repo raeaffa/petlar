@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote Mufasa</title>
+    <link rel="stylesheet" href="pet.css">
+</head>
+<body>
+    <header>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="html.html" target="_blank">
+                        <img width="100" height="100" src="logo2.png">
+        
+                </div>
+               
+                <ul class="nav-links">
+                    <li><a href="html.html">Home</a></li>
+                    <li><a href="somos.html">Quem somos</a></li>
+                    <li><a href="quero.html">Quero adotar</a></li>
+                    <li><a href="ajudar.html">Quero ajudar</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+    </header>
+    
+    <section class="pet-profile">
+        <h1>Mufasa</h1>
+        <img src="1.jpeg" alt="Mufasa">
+        <p><strong>Idade:</strong> 2 anos</p>
+        <p><strong>Local:</strong> Brejo Santo, Ceará</p>
+        <p><strong>Personalidade:</strong> Um gato aventureiro que adora explorar e fazer novos amigos!</p>
+        
+        <!-- Botão de adoção -->
+        <a href="form.html" class="adopt-btn">Quero Adotar Mufasa</a>
+        
+        <!-- Ícone de coração para salvar o pet -->
+        <button class="save-btn" onclick="salvarPet('Mufasa')">
+            <span>&#10084;</span> Salvar
+        </button>
+    </section>
+
+    <script>
+        // Função para salvar o pet
+        function salvarPet(nome) {
+            alert(nome + " foi salvo na sua lista de favoritos!");
+            // Aqui você pode adicionar lógica para salvar a informação no local storage ou enviar para o servidor
+        }
+    </script>
+     <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Amigo Não Se Compra. Todos os direitos reservados. <a href="termos.html">Termos de Uso</a></p>
+            <div class="footer-social">
+                <a href="#"><img src="insta.png" alt="Instagram"></a>
+                <a href="#"><img src="face.png" alt="Facebook"></a>
+                <a href="#"><img src="you.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

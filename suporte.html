@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - PetLar</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Certifique-se de que o caminho do CSS está correto -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo2.png" alt="Logo do Site">
+            </a>
+        </div>
+    </header>
+
+    <main class="support-container">
+        <section class="support-intro">
+            <h1>Suporte</h1>
+            <p>Estamos aqui para ajudar! Caso você tenha dúvidas, problemas ou precise de assistência, confira nossas perguntas frequentes ou entre em contato conosco.</p>
+        </section>
+
+        <section class="faq">
+            <h2>Perguntas Frequentes (FAQ)</h2>
+            <div class="faq-item">
+                <h3>Como posso adotar um pet?</h3>
+                <p>Para adotar, basta visitar nossa seção de adoção, escolher o pet que deseja e seguir as instruções no site. Após preencher o formulário, nossa equipe entrará em contato para os próximos passos.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Qual o tempo de resposta para o suporte?</h3>
+                <p>Nossa equipe responde normalmente em até 48 horas úteis após o recebimento da sua solicitação de suporte.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Como faço para doar para o abrigo?</h3>
+                <p>Você pode doar acessando a seção "Doações" no nosso site, onde encontrará todas as formas possíveis de ajudar.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Como posso reportar um problema técnico no site?</h3>
+                <p>Se você encontrou algum problema técnico, preencha o formulário abaixo e nos forneça o máximo de detalhes possível para que possamos resolver rapidamente.</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para falar com nosso suporte:</p>
+            <form action="form.php" method="POST">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="cta-button">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section class="additional-support">
+            <h2>Suporte Adicional</h2>
+            <p>Se preferir, entre em contato diretamente pelo email: <a href="mailto:suporte@petlar.com">suporte@petlar.com</a></p>
+            <p>Ou nos ligue no telefone: (11) 4002-8922</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>©️ 2024 PetLar. Todos os direitos reservados.</p>
+            <div class="footer-social">
+                <a href="#"><img src="face.png" alt="Facebook"></a>
+                <a href="#"><img src="you.png" alt="YouTube"></a>
+                <a href="#"><img src="insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

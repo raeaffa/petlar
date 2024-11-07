@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Não Se Compra</title>
+    <link rel="stylesheet" href="como.css">
+    <script>
+        function toggleDonationFields() {
+            var donationType = document.getElementById("donationType").value;
+            var moneyFields = document.getElementById("moneyFields");
+            var productFields = document.getElementById("productFields");
+
+            if (donationType === "dinheiro") {
+                moneyFields.style.display = "block";
+                productFields.style.display = "none";
+            } else if (donationType === "produto") {
+                moneyFields.style.display = "none";
+                productFields.style.display = "block";
+            } else {
+                moneyFields.style.display = "none";
+                productFields.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="html.html" target="_blank">
+                    <img width="100" height="100" src="logo2.png">
+    
+            </div>
+           
+            <ul class="nav-links">
+                <li><a href="html.html">Home</a></li>
+                <li><a href="somos.html">Quem somos</a></li>
+                <li><a href="quero.html">Quero adotar</a></li>
+                <li><a href="ajudar.html">Quero ajudar</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="login-buttons">
+                <a href="entrar.html" class="btn">Entrar</a>
+                <a href="cadastro.html" class="btn cadastre-se">Cadastre-se</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donation-intro">
+            <h2>Por que sua doação é importante?</h2>
+            <p>
+                A situação de abandono de animais nas ruas é um problema crescente. Milhares de cães e gatos são deixados em condições de vulnerabilidade, necessitando de cuidados básicos como alimentação, abrigo e cuidados médicos. As organizações de proteção animal lutam diariamente para resgatar, cuidar e encontrar lares para esses animais.
+                <br><br>
+                Entretanto, essas organizações muitas vezes dependem exclusivamente de doações para continuar seu trabalho. Por isso, toda ajuda é essencial. Com a sua doação, seja financeira ou de produtos como ração, medicamentos e brinquedos, você pode garantir que mais animais recebam a atenção e o cuidado de que tanto precisam. A sua generosidade pode fazer a diferença na vida de um animal.
+                <br><br>
+                Para nós, cada contribuição conta. Doando dinheiro, você nos ajuda a custear tratamentos médicos, esterilizações e alimentação de alta qualidade para os animais. Ao doar produtos, você diretamente oferece conforto e bem-estar para aqueles que mais precisam. Seja qual for a forma de ajuda, nós agradecemos imensamente pelo seu apoio nesta causa tão nobre. Juntos, podemos transformar a vida de muitos animais!
+                <br><br>
+                Além disso, a sua participação ativa e o envolvimento com nossa causa ajudam a criar uma rede de apoio que pode influenciar positivamente outras pessoas a se engajarem. A conscientização sobre a importância da adoção e da doação é fundamental para enfrentar o problema do abandono animal de forma mais eficaz. Sua contribuição não é apenas um ato de generosidade, mas um passo importante para um mundo melhor para os nossos amigos de quatro patas.
+            </p>
+        </section>
+        <section class="donation-form">
+            <h2>Ajude com Doações</h2>
+            <p>Você pode nos ajudar com doações de dinheiro ou produtos. Escolha uma das opções abaixo e preencha o formulário:</p>
+
+            <form action="php.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="donationType">Tipo de Doação:</label>
+                <select id="donationType" name="donationType" onchange="toggleDonationFields()" required>
+                    <option value="">Selecione...</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="produto">Produto</option>
+                </select>
+
+                <!-- Campos para Doação em Dinheiro -->
+                <div id="moneyFields" style="display: none;">
+                    <label for="donationAmount">Valor da Doação (R$):</label>
+                    <input type="number" id="donationAmount" name="donationAmount" step="0.01" placeholder="Ex: 50.00">
+                </div>
+
+                <!-- Campos para Doação de Produtos -->
+                <div id="productFields" style="display: none;">
+                    <label for="productName">Nome do Produto:</label>
+                    <input type="text" id="productName" name="productName" placeholder="Ex: Ração, Brinquedos">
+
+                    <label for="productQuantity">Quantidade:</label>
+                    <input type="number" id="productQuantity" name="productQuantity" min="1" placeholder="Ex: 5">
+                </div>
+
+                <button type="submit">Enviar Doação</button>
+            </form>
+        </section>
+    </main>
+    
+   
+
+    <footer>
+        <section class="footer-links">
+            <div class="footer-column">
+                <h4>Adote</h4>
+                <ul>
+                    <li><a href="#">Adote com responsabilidade</a></li>
+                    <li><a href="#">Pesquisar animais</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Colabore</h4>
+                <ul>
+                    <li><a href="#">Doe qualquer valor</a></li>
+                    <li><a href="#">Seja uma Empresa Parceira</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Divulgue um Animal</h4>
+                <ul>
+                    <li><a href="#">Cadastrar animal</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Sobre o Amigo</h4>
+                <ul>
+                    <li><a href="#">Sobre o Amigo Não Se Compra</a></li>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Termo de Uso e Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Perfil</h4>
+                <ul>
+                    <li><a href="#">Minha página de perfil</a></li>
+                    <li><a href="#">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="footer-social">
+            <a href="#"><img src="insta.png" alt="Instagram"></a>
+            <a href="#"><img src="face.png" alt="Facebook"></a>
+            <a href="#"><img src="you.png" alt="YouTube"></a>
+            <a href="#"><img src="in.png" alt="Twitter"></a>
+        </section>
+        
+        <p>&copy; 2024 Amigo Não Se Compra. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

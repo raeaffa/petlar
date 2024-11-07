@@ -1,0 +1,362 @@
+/* Reseta margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 0;
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 25px;
+    color: #F9A03F;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo small {
+    display: block;
+    font-size: 15px;
+    color: #7F22A0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Links da navegação */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7F22A0;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #F9A03F;
+}
+
+/* Botões de login */
+.login-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #7F22A0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cadastre-se {
+    background-color: #5E2B84;
+}
+
+.btn:hover {
+    background-color: #F9A03F;
+}
+
+/* Página de adoção */
+.adoption-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb a {
+    color: #5e2a82;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    color: #5e2a82;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #4f2170;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Parágrafo */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+
+/* Cartões de adoção */
+.adoption-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.adoption-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    height: 50%;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.adoption-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.adoption-card h3 {
+    font-size: 1.2rem;
+    color: #5e2a82;
+    margin: 15px 0 5px;
+}
+
+.adoption-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+.btn.cadastre-se {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5e2a82;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.btn.cadastre-se:hover {
+    background-color: #48205d;
+}
+
+
+/* Efeito ao passar o mouse sobre o cartão */
+.adoption-card:hover {
+    transform: scale(1.05);
+}
+
+/* Layout responsivo */
+@media (max-width: 1200px) {
+    .adoption-card {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .adoption-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .adoption-card {
+        width: 100%;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters button {
+        width: 100%;
+    }
+}
+
+/* Principal */
+main {
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Seções de ajuda e formulário */
+.donation-help, .adoption-tips, .contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Listas */
+ol, ul {
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+ol li, ul li {
+    margin-bottom: 15px;
+}
+
+/* Destaques e rótulos */
+strong {
+    color: #4f2170;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Campos de formulário */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Botão de chamada para ação */
+.cta-button {
+    background-color: #4f2170;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #6a35a1;
+}
+footer {
+    background-color: #7F22A0;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+footer p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+footer p a {
+    color: #F9A03F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-social {
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .footer-social img {
+        width: 25px;
+        height: 25px;
+    }
+}
